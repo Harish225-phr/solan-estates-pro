@@ -1,0 +1,8 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { EditorialPage } from "@/components/content";
+
+export const Route = createFileRoute("/properties-for-rent")({
+  head: () => ({ meta: [{ title: "Properties for Rent in Solan | Solan Estates" }, { name: "description", content: "Find sample houses, flats, offices and commercial property for rent in Solan and well-connected nearby areas." }, { property: "og:title", content: "Properties for Rent in Solan" }, { property: "og:description", content: "Find sample houses, flats, offices and commercial property for rent in Solan and well-connected nearby areas." }, { property: "og:type", content: "website" }, { property: "og:url", content: "/properties-for-rent" }, { name: "twitter:card", content: "summary_large_image" }], links: [{ rel: "canonical", href: "/properties-for-rent" }] }),
+  component: Page,
+});
+function Page() { return <EditorialPage title="Properties for Rent in Solan" eyebrow="Homes and workspaces" intro="Find sample houses, flats, offices and commercial property for rent in Solan and well-connected nearby areas." sections={[{ title: "Finding a rental that fits daily life", body: "Consider commute, parking, sunlight, maintenance, furnishing and lease terms. A local search can help narrow down suitable options across central Solan, Saproon, Chambaghat and beyond." }, { title: "Useful local context", body: "Our Solan property coverage includes established neighbourhoods and nearby areas such as Kandaghat, Kumarhatti, Dharampur, Barog, Chambaghat, Saproon, Shilli, Nauni and Oachghat. Availability varies, so every shortlist should be current and requirement-led." }]} />; }

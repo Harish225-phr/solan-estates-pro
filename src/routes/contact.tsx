@@ -1,0 +1,8 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { EditorialPage } from "@/components/content";
+
+export const Route = createFileRoute("/contact")({
+  head: () => ({ meta: [{ title: "Contact a Property Consultant in Solan | Solan Estates" }, { name: "description", content: "Contact a property consultant in Solan to discuss buying, selling, renting or investing across the region." }, { property: "og:title", content: "Contact a Property Consultant in Solan" }, { property: "og:description", content: "Contact a property consultant in Solan to discuss buying, selling, renting or investing across the region." }, { property: "og:type", content: "website" }, { property: "og:url", content: "/contact" }, { name: "twitter:card", content: "summary_large_image" }], links: [{ rel: "canonical", href: "/contact" }] }),
+  component: Page,
+});
+function Page() { return <EditorialPage title="Contact a Property Consultant in Solan" eyebrow="Start with your requirement" intro="Contact a property consultant in Solan to discuss buying, selling, renting or investing across the region." sections={[{ title: "Tell us what would make a property right for you", body: "Share your preferred location, property type, timeline and approximate budget. The phone, email and office details on this demonstration site are placeholders and must be replaced before publishing." }, { title: "Useful local context", body: "Our Solan property coverage includes established neighbourhoods and nearby areas such as Kandaghat, Kumarhatti, Dharampur, Barog, Chambaghat, Saproon, Shilli, Nauni and Oachghat. Availability varies, so every shortlist should be current and requirement-led." }]} />; }

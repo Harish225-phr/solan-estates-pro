@@ -1,0 +1,8 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { EditorialPage } from "@/components/content";
+
+export const Route = createFileRoute("/real-estate-agents-in-solan")({
+  head: () => ({ meta: [{ title: "Real Estate Agents in Solan | Solan Estates" }, { name: "description", content: "Work with real estate agents in Solan for property buying, selling, renting and investment-focused searches." }, { property: "og:title", content: "Real Estate Agents in Solan" }, { property: "og:description", content: "Work with real estate agents in Solan for property buying, selling, renting and investment-focused searches." }, { property: "og:type", content: "website" }, { property: "og:url", content: "/real-estate-agents-in-solan" }, { name: "twitter:card", content: "summary_large_image" }], links: [{ rel: "canonical", href: "/real-estate-agents-in-solan" }] }),
+  component: Page,
+});
+function Page() { return <EditorialPage title="Real Estate Agents in Solan" eyebrow="Local property guidance" intro="Work with real estate agents in Solan for property buying, selling, renting and investment-focused searches." sections={[{ title: "What professional local support should provide", body: "A good property advisor listens first, builds a relevant shortlist, communicates clearly and helps coordinate visits and next steps without applying unnecessary pressure." }, { title: "Useful local context", body: "Our Solan property coverage includes established neighbourhoods and nearby areas such as Kandaghat, Kumarhatti, Dharampur, Barog, Chambaghat, Saproon, Shilli, Nauni and Oachghat. Availability varies, so every shortlist should be current and requirement-led." }]} />; }

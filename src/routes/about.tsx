@@ -1,0 +1,8 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { EditorialPage } from "@/components/content";
+
+export const Route = createFileRoute("/about")({
+  head: () => ({ meta: [{ title: "Your Real Estate Partner in Solan | Solan Estates" }, { name: "description", content: "Learn about our demonstration approach to trusted real estate services across Solan and nearby Himachal Pradesh areas." }, { property: "og:title", content: "Your Real Estate Partner in Solan" }, { property: "og:description", content: "Learn about our demonstration approach to trusted real estate services across Solan and nearby Himachal Pradesh areas." }, { property: "og:type", content: "website" }, { property: "og:url", content: "/about" }, { name: "twitter:card", content: "summary_large_image" }], links: [{ rel: "canonical", href: "/about" }] }),
+  component: Page,
+});
+function Page() { return <EditorialPage title="Your Real Estate Partner in Solan" eyebrow="Local understanding, professional service" intro="Learn about our demonstration approach to trusted real estate services across Solan and nearby Himachal Pradesh areas." sections={[{ title: "Built around long-term relationships", body: "Our approach brings together local market knowledge, careful property matching and transparent communication. The aim is not to show the most properties, but to help clients focus on suitable options." }, { title: "Useful local context", body: "Our Solan property coverage includes established neighbourhoods and nearby areas such as Kandaghat, Kumarhatti, Dharampur, Barog, Chambaghat, Saproon, Shilli, Nauni and Oachghat. Availability varies, so every shortlist should be current and requirement-led." }]} />; }
