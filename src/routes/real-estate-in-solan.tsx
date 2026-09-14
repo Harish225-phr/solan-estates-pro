@@ -1,0 +1,8 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { EditorialPage } from "@/components/content";
+
+export const Route = createFileRoute("/real-estate-in-solan")({
+  head: () => ({ meta: [{ title: "Real Estate in Solan | Solan Estates" }, { name: "description", content: "Understand real estate in Solan, including residential property, commercial spaces, land, rentals and nearby micro-markets." }, { property: "og:title", content: "Real Estate in Solan" }, { property: "og:description", content: "Understand real estate in Solan, including residential property, commercial spaces, land, rentals and nearby micro-markets." }, { property: "og:type", content: "website" }, { property: "og:url", content: "/real-estate-in-solan" }, { name: "twitter:card", content: "summary_large_image" }], links: [{ rel: "canonical", href: "/real-estate-in-solan" }] }),
+  component: Page,
+});
+function Page() { return <EditorialPage title="Real Estate in Solan" eyebrow="A practical local market guide" intro="Understand real estate in Solan, including residential property, commercial spaces, land, rentals and nearby micro-markets." sections={[{ title: "Property choices across the Solan region", body: "Solan offers a mix of urban convenience and hillside living. Central areas suit everyday access, while locations such as Kandaghat and Barog offer a different balance of landscape, connectivity and pace." }, { title: "Useful local context", body: "Our Solan property coverage includes established neighbourhoods and nearby areas such as Kandaghat, Kumarhatti, Dharampur, Barog, Chambaghat, Saproon, Shilli, Nauni and Oachghat. Availability varies, so every shortlist should be current and requirement-led." }]} />; }

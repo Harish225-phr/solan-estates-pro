@@ -1,0 +1,8 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { EditorialPage } from "@/components/content";
+
+export const Route = createFileRoute("/plots-for-sale-in-solan")({
+  head: () => ({ meta: [{ title: "Plots for Sale in Solan | Solan Estates" }, { name: "description", content: "Explore sample residential plots and land for sale in Solan, Kandaghat, Barog, Shilli and surrounding areas." }, { property: "og:title", content: "Plots for Sale in Solan" }, { property: "og:description", content: "Explore sample residential plots and land for sale in Solan, Kandaghat, Barog, Shilli and surrounding areas." }, { property: "og:type", content: "website" }, { property: "og:url", content: "/plots-for-sale-in-solan" }, { name: "twitter:card", content: "summary_large_image" }], links: [{ rel: "canonical", href: "/plots-for-sale-in-solan" }] }),
+  component: Page,
+});
+function Page() { return <EditorialPage title="Plots for Sale in Solan" eyebrow="Land and residential plots" intro="Explore sample residential plots and land for sale in Solan, Kandaghat, Barog, Shilli and surrounding areas." sections={[{ title: "Land requires careful due diligence", body: "Road access, gradient, utilities, boundaries, title, permitted use and planning requirements all matter. Buyers should complete independent legal and technical checks before committing." }, { title: "Useful local context", body: "Our Solan property coverage includes established neighbourhoods and nearby areas such as Kandaghat, Kumarhatti, Dharampur, Barog, Chambaghat, Saproon, Shilli, Nauni and Oachghat. Availability varies, so every shortlist should be current and requirement-led." }]} />; }
