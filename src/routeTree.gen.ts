@@ -10,33 +10,220 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as CommercialPropertyInSolanRouteImport } from './routes/commercial-property-in-solan'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as FlatsForSaleInSolanRouteImport } from './routes/flats-for-sale-in-solan'
+import { Route as HousesForSaleInSolanRouteImport } from './routes/houses-for-sale-in-solan'
+import { Route as LocationsRouteImport } from './routes/locations'
+import { Route as PlotsForSaleInSolanRouteImport } from './routes/plots-for-sale-in-solan'
+import { Route as PropertiesRouteImport } from './routes/properties'
+import { Route as PropertiesForRentRouteImport } from './routes/properties-for-rent'
+import { Route as PropertiesForSaleRouteImport } from './routes/properties-for-sale'
+import { Route as PropertyDealersInSolanRouteImport } from './routes/property-dealers-in-solan'
+import { Route as RealEstateAgentsInSolanRouteImport } from './routes/real-estate-agents-in-solan'
+import { Route as RealEstateInSolanRouteImport } from './routes/real-estate-in-solan'
+import { Route as ServicesRouteImport } from './routes/services'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommercialPropertyInSolanRoute =
+  CommercialPropertyInSolanRouteImport.update({
+    id: '/commercial-property-in-solan',
+    path: '/commercial-property-in-solan',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FlatsForSaleInSolanRoute = FlatsForSaleInSolanRouteImport.update({
+  id: '/flats-for-sale-in-solan',
+  path: '/flats-for-sale-in-solan',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HousesForSaleInSolanRoute = HousesForSaleInSolanRouteImport.update({
+  id: '/houses-for-sale-in-solan',
+  path: '/houses-for-sale-in-solan',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LocationsRoute = LocationsRouteImport.update({
+  id: '/locations',
+  path: '/locations',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlotsForSaleInSolanRoute = PlotsForSaleInSolanRouteImport.update({
+  id: '/plots-for-sale-in-solan',
+  path: '/plots-for-sale-in-solan',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PropertiesRoute = PropertiesRouteImport.update({
+  id: '/properties',
+  path: '/properties',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PropertiesForRentRoute = PropertiesForRentRouteImport.update({
+  id: '/properties-for-rent',
+  path: '/properties-for-rent',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PropertiesForSaleRoute = PropertiesForSaleRouteImport.update({
+  id: '/properties-for-sale',
+  path: '/properties-for-sale',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PropertyDealersInSolanRoute = PropertyDealersInSolanRouteImport.update({
+  id: '/property-dealers-in-solan',
+  path: '/property-dealers-in-solan',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RealEstateAgentsInSolanRoute = RealEstateAgentsInSolanRouteImport.update({
+  id: '/real-estate-agents-in-solan',
+  path: '/real-estate-agents-in-solan',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RealEstateInSolanRoute = RealEstateInSolanRouteImport.update({
+  id: '/real-estate-in-solan',
+  path: '/real-estate-in-solan',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesRoute = ServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/commercial-property-in-solan': typeof CommercialPropertyInSolanRoute
+  '/contact': typeof ContactRoute
+  '/flats-for-sale-in-solan': typeof FlatsForSaleInSolanRoute
+  '/houses-for-sale-in-solan': typeof HousesForSaleInSolanRoute
+  '/locations': typeof LocationsRoute
+  '/plots-for-sale-in-solan': typeof PlotsForSaleInSolanRoute
+  '/properties': typeof PropertiesRoute
+  '/properties-for-rent': typeof PropertiesForRentRoute
+  '/properties-for-sale': typeof PropertiesForSaleRoute
+  '/property-dealers-in-solan': typeof PropertyDealersInSolanRoute
+  '/real-estate-agents-in-solan': typeof RealEstateAgentsInSolanRoute
+  '/real-estate-in-solan': typeof RealEstateInSolanRoute
+  '/services': typeof ServicesRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/commercial-property-in-solan': typeof CommercialPropertyInSolanRoute
+  '/contact': typeof ContactRoute
+  '/flats-for-sale-in-solan': typeof FlatsForSaleInSolanRoute
+  '/houses-for-sale-in-solan': typeof HousesForSaleInSolanRoute
+  '/locations': typeof LocationsRoute
+  '/plots-for-sale-in-solan': typeof PlotsForSaleInSolanRoute
+  '/properties': typeof PropertiesRoute
+  '/properties-for-rent': typeof PropertiesForRentRoute
+  '/properties-for-sale': typeof PropertiesForSaleRoute
+  '/property-dealers-in-solan': typeof PropertyDealersInSolanRoute
+  '/real-estate-agents-in-solan': typeof RealEstateAgentsInSolanRoute
+  '/real-estate-in-solan': typeof RealEstateInSolanRoute
+  '/services': typeof ServicesRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/commercial-property-in-solan': typeof CommercialPropertyInSolanRoute
+  '/contact': typeof ContactRoute
+  '/flats-for-sale-in-solan': typeof FlatsForSaleInSolanRoute
+  '/houses-for-sale-in-solan': typeof HousesForSaleInSolanRoute
+  '/locations': typeof LocationsRoute
+  '/plots-for-sale-in-solan': typeof PlotsForSaleInSolanRoute
+  '/properties': typeof PropertiesRoute
+  '/properties-for-rent': typeof PropertiesForRentRoute
+  '/properties-for-sale': typeof PropertiesForSaleRoute
+  '/property-dealers-in-solan': typeof PropertyDealersInSolanRoute
+  '/real-estate-agents-in-solan': typeof RealEstateAgentsInSolanRoute
+  '/real-estate-in-solan': typeof RealEstateInSolanRoute
+  '/services': typeof ServicesRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/commercial-property-in-solan'
+    | '/contact'
+    | '/flats-for-sale-in-solan'
+    | '/houses-for-sale-in-solan'
+    | '/locations'
+    | '/plots-for-sale-in-solan'
+    | '/properties'
+    | '/properties-for-rent'
+    | '/properties-for-sale'
+    | '/property-dealers-in-solan'
+    | '/real-estate-agents-in-solan'
+    | '/real-estate-in-solan'
+    | '/services'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/commercial-property-in-solan'
+    | '/contact'
+    | '/flats-for-sale-in-solan'
+    | '/houses-for-sale-in-solan'
+    | '/locations'
+    | '/plots-for-sale-in-solan'
+    | '/properties'
+    | '/properties-for-rent'
+    | '/properties-for-sale'
+    | '/property-dealers-in-solan'
+    | '/real-estate-agents-in-solan'
+    | '/real-estate-in-solan'
+    | '/services'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/commercial-property-in-solan'
+    | '/contact'
+    | '/flats-for-sale-in-solan'
+    | '/houses-for-sale-in-solan'
+    | '/locations'
+    | '/plots-for-sale-in-solan'
+    | '/properties'
+    | '/properties-for-rent'
+    | '/properties-for-sale'
+    | '/property-dealers-in-solan'
+    | '/real-estate-agents-in-solan'
+    | '/real-estate-in-solan'
+    | '/services'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  CommercialPropertyInSolanRoute: typeof CommercialPropertyInSolanRoute
+  ContactRoute: typeof ContactRoute
+  FlatsForSaleInSolanRoute: typeof FlatsForSaleInSolanRoute
+  HousesForSaleInSolanRoute: typeof HousesForSaleInSolanRoute
+  LocationsRoute: typeof LocationsRoute
+  PlotsForSaleInSolanRoute: typeof PlotsForSaleInSolanRoute
+  PropertiesRoute: typeof PropertiesRoute
+  PropertiesForRentRoute: typeof PropertiesForRentRoute
+  PropertiesForSaleRoute: typeof PropertiesForSaleRoute
+  PropertyDealersInSolanRoute: typeof PropertyDealersInSolanRoute
+  RealEstateAgentsInSolanRoute: typeof RealEstateAgentsInSolanRoute
+  RealEstateInSolanRoute: typeof RealEstateInSolanRoute
+  ServicesRoute: typeof ServicesRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +235,123 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/commercial-property-in-solan': {
+      id: '/commercial-property-in-solan'
+      path: '/commercial-property-in-solan'
+      fullPath: '/commercial-property-in-solan'
+      preLoaderRoute: typeof CommercialPropertyInSolanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/flats-for-sale-in-solan': {
+      id: '/flats-for-sale-in-solan'
+      path: '/flats-for-sale-in-solan'
+      fullPath: '/flats-for-sale-in-solan'
+      preLoaderRoute: typeof FlatsForSaleInSolanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/houses-for-sale-in-solan': {
+      id: '/houses-for-sale-in-solan'
+      path: '/houses-for-sale-in-solan'
+      fullPath: '/houses-for-sale-in-solan'
+      preLoaderRoute: typeof HousesForSaleInSolanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/locations': {
+      id: '/locations'
+      path: '/locations'
+      fullPath: '/locations'
+      preLoaderRoute: typeof LocationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plots-for-sale-in-solan': {
+      id: '/plots-for-sale-in-solan'
+      path: '/plots-for-sale-in-solan'
+      fullPath: '/plots-for-sale-in-solan'
+      preLoaderRoute: typeof PlotsForSaleInSolanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/properties': {
+      id: '/properties'
+      path: '/properties'
+      fullPath: '/properties'
+      preLoaderRoute: typeof PropertiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/properties-for-rent': {
+      id: '/properties-for-rent'
+      path: '/properties-for-rent'
+      fullPath: '/properties-for-rent'
+      preLoaderRoute: typeof PropertiesForRentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/properties-for-sale': {
+      id: '/properties-for-sale'
+      path: '/properties-for-sale'
+      fullPath: '/properties-for-sale'
+      preLoaderRoute: typeof PropertiesForSaleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/property-dealers-in-solan': {
+      id: '/property-dealers-in-solan'
+      path: '/property-dealers-in-solan'
+      fullPath: '/property-dealers-in-solan'
+      preLoaderRoute: typeof PropertyDealersInSolanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/real-estate-agents-in-solan': {
+      id: '/real-estate-agents-in-solan'
+      path: '/real-estate-agents-in-solan'
+      fullPath: '/real-estate-agents-in-solan'
+      preLoaderRoute: typeof RealEstateAgentsInSolanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/real-estate-in-solan': {
+      id: '/real-estate-in-solan'
+      path: '/real-estate-in-solan'
+      fullPath: '/real-estate-in-solan'
+      preLoaderRoute: typeof RealEstateInSolanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services': {
+      id: '/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  CommercialPropertyInSolanRoute: CommercialPropertyInSolanRoute,
+  ContactRoute: ContactRoute,
+  FlatsForSaleInSolanRoute: FlatsForSaleInSolanRoute,
+  HousesForSaleInSolanRoute: HousesForSaleInSolanRoute,
+  LocationsRoute: LocationsRoute,
+  PlotsForSaleInSolanRoute: PlotsForSaleInSolanRoute,
+  PropertiesRoute: PropertiesRoute,
+  PropertiesForRentRoute: PropertiesForRentRoute,
+  PropertiesForSaleRoute: PropertiesForSaleRoute,
+  PropertyDealersInSolanRoute: PropertyDealersInSolanRoute,
+  RealEstateAgentsInSolanRoute: RealEstateAgentsInSolanRoute,
+  RealEstateInSolanRoute: RealEstateInSolanRoute,
+  ServicesRoute: ServicesRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
