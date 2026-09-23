@@ -10,9 +10,9 @@ const nav = [
 ] as const;
 
 export function Brand({ light = false }: { light?: boolean }) {
-  return <Link to="/" className={`flex items-center gap-3 ${light ? "text-primary-foreground" : "text-primary"}`} aria-label="Solan Estates home">
+  return <Link to="/" className={`flex items-center gap-3 ${light ? "text-primary-foreground" : "text-primary"}`} aria-label="Raghuvanshi Real Estate Agency home">
     <span className={`grid size-10 place-items-center border ${light ? "border-primary-foreground/35" : "border-primary/30"}`}><Mountain className="size-5" /></span>
-    <span><strong className="block font-display text-xl leading-none">SOLAN ESTATES</strong><small className="text-[0.57rem] font-bold tracking-[0.22em] opacity-70">HIMACHAL PROPERTY ADVISORS</small></span>
+    <span><strong className="block font-display text-xl leading-none">RAGHUVANSHI</strong><small className="text-[0.57rem] font-bold tracking-[0.22em] opacity-70">REAL ESTATE AGENCY</small></span>
   </Link>;
 }
 
@@ -37,10 +37,10 @@ const footerGroups = [
 ] as const;
 
 export function SiteFooter() { return <footer className="bg-primary text-primary-foreground"><div className="container-site grid gap-12 py-16 lg:grid-cols-[1.4fr_2fr]">
-  <div><Brand light /><p className="mt-6 max-w-sm text-sm leading-7 text-primary-foreground/70">A premium demonstration of trusted real estate services in Solan, Himachal Pradesh—helping buyers, sellers, landlords and investors navigate local property.</p><div className="mt-6 flex gap-3">{[Instagram, Facebook, Linkedin].map((Icon, i) => <span key={i} className="grid size-10 place-items-center border border-primary-foreground/20" aria-hidden="true"><Icon className="size-4" /></span>)}</div></div>
+  <div><Brand light /><p className="mt-6 max-w-sm text-sm leading-7 text-primary-foreground/70">A premium real estate consultant in Kasauli, Himachal Pradesh—helping buyers, sellers, landlords and investors navigate local property.</p><div className="mt-6 flex gap-3">{[Instagram, Facebook, Linkedin].map((Icon, i) => <span key={i} className="grid size-10 place-items-center border border-primary-foreground/20" aria-hidden="true"><Icon className="size-4" /></span>)}</div></div>
   <div className="grid gap-8 sm:grid-cols-3">{footerGroups.map(([title, links]) => <div key={title}><h2 className="font-sans text-xs font-bold uppercase tracking-[0.16em] text-highlight">{title}</h2><ul className="mt-5 space-y-3">{links.map(([label, to]) => <li key={label}><Link to={to} className="text-sm text-primary-foreground/70 hover:text-primary-foreground">{label}</Link></li>)}</ul></div>)}</div>
-</div><div className="border-t border-primary-foreground/15"><div className="container-site flex flex-col gap-3 py-6 text-xs text-primary-foreground/55 md:flex-row md:items-center md:justify-between"><p>© 2026 Solan Estates. Demonstration website — sample content only.</p><p>Real Estate Services in Solan, Himachal Pradesh</p><div className="flex gap-4"><span>Privacy Policy</span><span>Terms</span><span>Sitemap</span></div></div></div></footer>; }
+</div><div className="border-t border-primary-foreground/15"><div className="container-site flex flex-col gap-3 py-6 text-xs text-primary-foreground/55 md:flex-row md:items-center md:justify-between"><p>© 2026 Raghuvanshi Real Estate Agency.</p><p>Real Estate Services in Kasauli, Solan, Barog, and Parwanoo.</p><div className="flex gap-4"><span>Privacy Policy</span><span>Terms</span><span>Sitemap</span></div></div></div></footer>; }
 
 export function WhatsAppFloat() { return <a href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Chat about property in Solan on WhatsApp" className="fixed bottom-5 right-5 z-40 grid size-14 place-items-center rounded-full bg-primary text-primary-foreground shadow-xl transition-transform hover:scale-105"><MessageCircle className="size-6" /></a>; }
 
-export function ContactStrip() { return <div className="grid gap-3 text-sm text-muted-foreground"><span className="flex items-center gap-3"><Phone className="size-4 text-highlight" /> Phone: Demo placeholder</span><span className="flex items-center gap-3"><MessageCircle className="size-4 text-highlight" /> WhatsApp: Demo placeholder</span><span className="flex items-center gap-3"><Building2 className="size-4 text-highlight" /> Email: enquiries@example.com</span><span className="flex items-center gap-3"><MapPin className="size-4 text-highlight" /> Office: Solan, Himachal Pradesh (placeholder)</span></div>; }
+export function ContactStrip() { return <div className="grid gap-3 text-sm text-muted-foreground"><span className="flex items-center gap-3"><Phone className="size-4 text-highlight" /> Phone: +91 9736368695</span><span className="flex items-center gap-3"><MessageCircle className="size-4 text-highlight" /> WhatsApp: +91 9736368695</span><span className="flex items-center gap-3"><Building2 className="size-4 text-highlight" /> Email: ashit.raghuwanshi@example.com</span><span className="flex items-center gap-3"><MapPin className="size-4 text-highlight" /> Office: Bhoj Nagar, Kasauli, HP 173204</span></div>; }

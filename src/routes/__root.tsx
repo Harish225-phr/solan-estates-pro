@@ -78,10 +78,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Solan Estates | Real Estate in Solan" },
+      { title: "Raghuvanshi Real Estate Agency | Real Estate in Solan" },
       { name: "description", content: "Explore trusted real estate services and sample properties across Solan, Himachal Pradesh." },
-      { name: "author", content: "Solan Estates" },
-      { property: "og:title", content: "Solan Estates" },
+      { name: "author", content: "Raghuvanshi Real Estate Agency" },
+      { property: "og:title", content: "Raghuvanshi Real Estate Agency" },
       { property: "og:description", content: "Trusted property guidance across Solan and nearby Himachal areas." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
